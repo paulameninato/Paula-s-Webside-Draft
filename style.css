@@ -1,0 +1,614 @@
+
+/* Table of Contents
+_________________________________________
+I. Color Palette
+II. General Content (HTML, main)
+III. Header & Navigation
+IV. Images & Media
+V. Footer
+VI. Resume
+VII. Web Design
+VIII. eBook
+IX. Contact Form
+X. Media Queries
+________________________________________
+*/
+
+/* Color Palette
+#BDEDDB Magic Mint
+#94DDBC Sea Foam Green
+#88BB92 Dark Sea Green
+#714955 Tuscan Red
+#BF3611 Rust
+#FF9B82 Salmon
+#BEF7F7 Super light Green
+#42000
+*/
+html {box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit;}
+
+/* Body */
+
+.section {
+    display: inline-block;
+}
+body {
+    font-family: 'Merriweather', serif;
+    color: #4F1525;
+    margin: 0;
+    background-color: #BDEDDB;
+    font-size: 1.5vw;
+}
+
+a:hover {text-decoration:none}
+
+.content-wrap {
+    min-width: 200px;
+    max-width: 1100px;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.content-wrap-2 {
+    padding: 5%;
+    margin: 0 ;
+    overflow: hidden;
+}
+
+/* Navigation */
+nav {background-color: #420000;}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    color: #FF9B82;
+    margin-left: -3px;
+    margin-right: -3px;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #FF9B82;
+    color: #420000;
+}
+
+.uppercase {text-transform: uppercase;}
+
+#website {
+    text-align: center;
+    width:100%;}
+
+#website a {display: inline-block;}
+
+#inpage {
+    position: fixed;
+    font-size: .8em;
+    bottom: 0;
+    z-index: 100;
+}
+
+#inpage a{float: left;}
+
+/* Header */
+
+header {
+    background: #FF9B82;
+    color: #4F1525;
+    position: relative;
+} 
+
+h1, h2 {
+    font-family: 'ZCOOL XiaoWei', serif;
+    color: #420000;
+    font-size: 1.5rem;
+    resize: vertical;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.profile-img {
+    width: 300px;
+    border-radius: 50%;
+    float: left;
+    padding: 10px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+
+footer {
+    background: #420000;
+    color: #BDEDDB;
+    text-align: center;
+    font-size: .8em;
+}
+
+footer a {
+    color: #FF9B82;
+    padding: 10px;
+    display: inline-block;
+    font-size: 2em;   
+}
+
+/* Home */
+
+.creative-dissent {
+    background: url(eBook_Banner.jpg) no-repeat;
+    background-size: 100%;
+    padding-bottom: 7%;
+} 
+
+a {text-decoration: none;}
+
+.creative-dissent:hover {opacity: 0.5;}
+
+.art {background: url(eggs.jpg) no-repeat fixed;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 20%;}
+.art h2 {font-size: 4em;
+    background-color: #FF9B82;
+    opacity: 0.7;
+    padding-right: 20%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-left: 0 auto;
+    z-index: 400;
+    float: right;}
+.art:hover {opacity: 0.5}
+
+.web-home {background: url(Photos/paint.jpg) no-repeat fixed;
+        background-size: cover;
+    padding-top: 10%;
+    display:block;}
+.web-home h2 {font-size: 4em;
+    background-color: #FF9B82;
+    opacity: 0.7;
+    right: 0;
+    padding-right: 10%;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    z-index: 400;
+    float: right;}
+.web-home h3 {font-size: 1.5em;}
+.web-home:hover {opacity: 0.5;}
+.web-home:after {
+    content: "";
+    visibility: hidden;
+    overflow: hidden;
+    display: block;
+    height: 0;
+    clear: both;}
+
+/* Biography */
+.bio {
+    background: url(Photos/detail.JPG) no-repeat fixed;
+    background-size: cover;}
+.austria {
+    width: 220px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 3%;}
+.embassy {
+    width: 220px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 3%;
+    margin-bottom: 3%;}
+
+/* Resume */
+.work {background: #BBE8CF;}
+.school {background: #AAE2C8;}
+.exhibition {background: #94DDBC;}
+#swarthmore {min-height: 100px;}
+    /* Swarthmore needs a media query */
+.col-narrow {
+        width: 33%;
+        float: left;
+        min-height: 180px;
+        padding-right: 3%;
+        padding-bottom: 3%;}
+.col-wide {
+        width: 65%;
+        float: left; 
+        min-height: 180px;
+        padding-bottom: 3%;} 
+
+/* Download Resume Button */
+
+.btn {
+    text-decoration: none;
+    background-color: #420000;
+    color: #FF9B82;
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Web Design */
+
+.webdesign {
+    background: url(Photos/paint.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: top;}
+.promote1 {
+    background-color: rgb(255, 155, 130);
+    opacity: 0.7;
+    text-align: right;
+    display: inline-block;
+    padding-left: 15%;
+    margin-top: 12%;
+    font-size: 4em;
+    }
+.header-webdesign {
+    text-align: center;
+    color: #420000;
+}
+
+blockquote {text-align: center;}
+.quote {padding: 2%;}
+#pressfield {
+    font-size: 1.5rem;
+    font-weight: 600;}
+#jeanine {font-size: 1.1rem;
+    font-weight: 600;}
+.client {margin-top: 6%;}
+.list {
+    padding: 3%;
+    width: cover;
+    background-color: rgba(255, 155, 130, 0.6);
+    border-radius: 20px;
+    margin-bottom: 2%;
+    overflow: hidden;}
+
+.web-float {border-radius: 50%;
+    margin-top: 6%;}
+.description {
+    text-align: center;
+    padding: 6%;
+    font-size: .9rem;
+    background-color: rgba(255, 155, 130, 0.6);
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 200px;}
+.description-title {font-size: 1.1rem;}
+#selling {margin-bottom: 15%;}
+.h2 {text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;}
+.client-work {
+    width: 50%;
+    float: left;
+    min-height: 120px;
+    padding-right: 3%;
+    padding: 1%;
+    margin-bottom: 8%;}
+.client-work:hover {opacity: 0.5;}
+.calendly-inline-widget {margin-top: 5%; 
+    margin-bottom: 5%}
+li {margin: 0 0 4px 0;}
+
+/* eBook Header */
+.eBook-header {
+    background: url(eBook_Banner.jpg) no-repeat fixed;
+    background-size: 100%;
+    background-position: top;
+    padding-bottom: 5%;
+}
+
+#cover {
+    background-color: #BEF7F7;
+    opacity: 0.7;
+    padding-left: 25%;
+    z-index: 400;
+    font-size: 5rem;
+}
+
+.title {
+    text-align: right;
+    margin-right: 45%;
+    padding-top: 10%;
+    font-size: .7rem;
+}
+/* eBook Main */
+
+.eBook-main {
+    margin-bottom: 0 auto;
+    padding-bottom: 10px;
+}
+
+#questions {
+    line-height: 75%;
+    font-weight: 800;
+    text-indent: 40px;
+}
+
+/* eBook Download */
+
+.eBook-download {
+    margin-top: 4%;
+}
+
+.download {
+    text-align: center;
+    margin-bottom:  8%;;
+}
+
+#eBook-download {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #420000;
+    color: #FF9B82;
+    padding: 10px 20px;
+    line-height: 1.5em;
+    border-radius: 8px;}
+#eBook-download:hover {
+    background-color: #FF9B82;
+    color: #420000;}
+
+
+/* Contact Form */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #420000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    background-color: aliceblue;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+input[type=submit]{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    background-color: #420000;
+    color: #FF9B82;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+} 
+
+
+input[type=submit]:hover {
+  background-color: #FF9B82;
+    color: #420000;
+}
+
+.container {
+    line-height: 1.5em;
+    font-weight: 600;
+    color: #420000;
+}
+
+/* Portfolio */
+
+img {max-width: 100%;}
+
+img:hover {opacity: 0.7;}
+
+.portfolio-heading {
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+#portfolio-heading {
+    background-color: rgb(255, 155, 130);
+    opacity: 0.7;
+    text-align: right;
+    display: block;
+    padding-right: 25%;
+    margin-left: 35%;
+    margin-top: 12%;
+    font-size: 6em;
+    }
+
+.portfolio-img {
+    background: url(eggs.jpg) no-repeat fixed;
+    background-position: top;
+    background-size: 100%;
+}
+
+.row img:hover {opacity:0.5;}
+
+/* Media Queries */
+
+@media (min-width: 1200px) {
+    body {font-size: 1rem;}
+    .content-wrap {max-width: 1400px;}
+    #cover {font-size: 7rem;}
+    #portfolio-heading {font-size: 7em;}
+    .list {float: left;
+    width: 30%;
+    margin: 1.5%;}
+}
+
+@media (max-width: 899px) {
+    #website {display: none;
+        margin-top: -9999px;
+        margin-left: -9999px;
+        padding: 0;}
+    .dropdown-tab {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #FF9B82;
+        background-color: #420000;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border: none;}
+    .dropdown-tab:hover {background-color: #FF9B82;
+        color: #420000;
+        position: relative;}
+    .dropdown-content:hover {
+        background-color: #FF9B82;
+        color: #420000;}
+     .dropdown {
+        display: inline;
+        z-index: 10;}
+    .dropdown-hover {display: inline;
+        position: absolute;}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown-content {
+        display: none;
+        position: relative;
+        line-height: 1.5em;
+        max-width: 160px;
+        z-index: 1;
+        padding: 10px;
+        background-color: #420000;
+        text-transform: uppercase;
+        font-size: .8rem;}
+    header {
+        padding-bottom: 2%;
+        padding-top: 20;}
+} 
+
+@media (min-width: 900px) {
+    .dropdown {display:none;}
+    .dropdown-content {display:none;}
+}
+
+@media (max-width: 750px) {
+    body {font-size: .8rem;}
+    #cover {font-size: 4rem;}
+    .title {font-size: .5rem}
+    #portfolio-heading {font-size: 5em;}
+    .client-work {float: none;
+        width: 100%;
+        padding: 0px;
+        margin: auto;
+        margin-bottom: 3%;
+        margin-top: 2%;}
+    .web-home {font-size: .9em;}
+    .art {font-size: .9em;}
+}
+
+@media (max-width: 653px) {
+    .art {font-size: .8em;}
+    .web-home {font-size: .8em;}
+    .header-center {text-align: center;}
+    h1 {font-size: 2.5em;}
+    h2 {font-size: 1.5em;}
+    .profile-img {
+        width: 250px;
+        border-radius: 50%;
+        padding: 0px;}
+    #cover {font-size: 3rem;}
+    .title {font-size: .5rem}
+    #questions {line-height: 1.5em;}
+    #eBook-download {font-size: 1.2rem;
+        width: 80%;
+        margin-bottom: 0px;}
+    .austria {
+        align-content: center;
+        margin-right: 5%;
+        margin-bottom: 5%;}
+    .embassy {
+        align-content: center;
+        margin-left: 5%;
+        margin-bottom: 5%;}
+}
+
+@media (max-width: 540px) {
+    .art {font-size: .7em;}
+    .web-home {font-size: .7em;}
+    .profile-img {
+        float: none;
+        margin: 0px;}
+    #inpage {
+        font-size: .5em;
+        font-weight: 400}
+    #cover {font-size: 2.25rem;}
+    .title {font-size: .5rem}
+   .col-narrow {
+        width: 100%;
+        float: none;
+        min-height: 3px;
+        padding-bottom: 1%;
+        margin-bottom: 0;}
+.col-wide {
+        width: 100%;
+        float: none; 
+        min-height: 3px;
+        padding-bottom: 3%;} 
+    #swarthmore {min-height: 1px;}
+.austria {
+    width: 180px;}
+.embassy {
+    width: 180px;}
+    #portfolio-heading {font-size: 4em;}
+}
+
+@media(max-width: 376px){
+    .promote1 {font-size: 2rem;}
+    .creative-dissent {padding-bottom: 0.5%;}
+    .creative-dissent h1 {font-size: 1.5em;}
+    .creative-dissent #title {}
+    .art {font-size: .5em;}
+    .web-home {font-size: .5em;}
+    .profile-img {
+        align-content: center;
+        float: none;
+        padding: 0px;
+        width: 200px;}
+    h1 {font-size: 3em;}
+    h2 {font-size: 2em;}
+    body {font-size: .7em;}
+    .content-wrap {padding: 15px;}
+    #cover {font-size: 1.8rem;}
+    .title {font-size: .4rem}
+    #eBook-download {font-size: 1rem;}
+    .austria {
+        float: none;
+        width: 230px;
+        margin: auto;
+        align-content: center;}
+    .embassy {
+        float: none;
+        width: 230px;
+        margin: auto;
+        align-content: center;}
+    #portfolio-heading {font-size: 3em;}
+}
+
+
+@media(max-width: 599px) {
+    .portfolio {padding-top: 10%;}
+}    
+    
+    
+    
+    
+    .portfolio-heading {padding-left: 10%;}
+    .container {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box; }
+    .column,
+    .columns {
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+        margin: 1%;}
